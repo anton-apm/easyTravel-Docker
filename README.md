@@ -1,12 +1,12 @@
 # easyTravel-Docker
 
-![easyTravel Logo](https://github.com/dynatrace-innovationlab/easyTravel-Builder/blob/images/easyTravel-logo.png)
+## IMPORTANT:
+- You need to add the link to the Vagrantfile to download the oneagent. You can find it inside your Dynatrace environment under Deploy Dynatrace. Relevant doc:
+ https://www.dynatrace.com/support/help/technology-support/operating-systems/linux/installation/install-oneagent-on-linux/
 
-This project builds and deploys the [Dynatrace easyTravel](https://community.dynatrace.com/community/display/DL/Demo+Applications+-+easyTravel) demo application in [Docker](https://www.docker.com/). All components are readily available on the [Docker Hub](https://hub.docker.com/u/dynatrace/).
-
-## 
 
 ## This is a fork of https://github.com/Dynatrace/easyTravel-Docker with the following changes implemeted:
+
 1. .env files was changed to contain 'ET_APM_SERVER_DEFAULT=APM'. This is required to monitor Easytravel with Dynatrace vs older  monitoring solution Appmon.
 
 2. Vagrantfile was added to allow instant deployment of a virtual machine with Dynatrace Oneagent, Docker, Docker-compose, Git and Easytravel. Here are the contents of the Vagrantfile:
@@ -41,6 +41,3 @@ Vagrant.configure("2") do |config|
   config.vm.network "private_network", ip: "192.168.7.8"
 end
 
-## IMPORTANT:
-- You need to add the link to the Vagrantfile to download the oneagent. You can find it inside your Dynatrace environment under Deploy Dynatrace. Relevant doc:
- https://www.dynatrace.com/support/help/technology-support/operating-systems/linux/installation/install-oneagent-on-linux/
