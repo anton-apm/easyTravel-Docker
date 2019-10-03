@@ -26,7 +26,7 @@
 
 
 Here are the contents of the Vagrantfile:
-
+```
 $script = <<-SCRIPT
 apt-get update
 apt-get install git docker docker-compose -y
@@ -56,4 +56,4 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: $script_everystartup, run: 'always'
   config.vm.network "private_network", ip: "192.168.7.8"
 end
-
+```
