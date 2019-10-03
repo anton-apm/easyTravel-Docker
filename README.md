@@ -1,4 +1,4 @@
-# easyTravel-Docker
+## This project is aimed at quick deployment of Easytravel and Dynatrace for demo purposes
 
 ## IMPORTANT:
 - You need to add the link to the Vagrantfile to download the oneagent. You can find it inside your Dynatrace environment under Deploy Dynatrace. Relevant doc:
