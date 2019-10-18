@@ -12,6 +12,7 @@
 ## After doing the step above this is what you need to do to run Easytravel:
 - Start Git bash or similar console
 - git clone https://github.com/anton-apm/easyTravel-Docker/
+## IMPORTANT! You need to edit the Vagrantfile and insert your OneAgent download link/token
 - cd easytravel-Docker
 - vagrant up
 
