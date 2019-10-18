@@ -5,7 +5,7 @@
  https://www.dynatrace.com/support/help/technology-support/operating-systems/linux/installation/install-oneagent-on-linux/
 
 ## Other prerequisites:
-- Virtualbox (or another supported provider for Vagrant)
+- Virtualbox 
 - Vargant
 - Git
 
